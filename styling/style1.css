@@ -45,7 +45,7 @@ p{
      background:linear-gradient(to right, #eaf702ec 0, #bfcd3c 0%, #f8e90f 100%);
 }
 
-/* .navbar{
+.navbar{
      content:"";
      position:absolute;
      top:0%;
@@ -55,7 +55,7 @@ p{
      opacity: 0.3;
      z-index: -1;
      background:linear-gradient(to right, #1e5799 0, #3ccdbd 0%, #16c9f6 100%);
-} */
+}
 
 .navbar a{
      font-weight: bold;
