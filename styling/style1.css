@@ -1,9 +1,8 @@
-*{
+{
      margin:0;
      padding: 0;
      box-sizing: border-box;
      font-family: 'Lato', sans-serif;
-     
 }
 a{
      text-decoration: none;
@@ -46,10 +45,8 @@ p{
      background:linear-gradient(to right, #eaf702ec 0, #bfcd3c 0%, #f8e90f 100%);
 }
 
-
 /* .navbar{
      content:"";
-     width:100%;
      position:absolute;
      top:0%;
      bottom:0%;
@@ -112,7 +109,7 @@ p{
      margin-right: 30px; */
      border-radius: 30px;
      transition: 0.3s;
-     
+
 }
 
 .extra-div:hover{
@@ -333,8 +330,6 @@ p{
      padding: 10px;
      border-radius: 10px;
 }
-
-
 #myBtn:hover{
      background:#606060;
 } */
@@ -396,4 +391,3 @@ p{
 
 
 
-    
