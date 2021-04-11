@@ -3,6 +3,7 @@
      padding: 0;
      box-sizing: border-box;
      font-family: 'Lato', sans-serif;
+     width: 1200px;
 }
 a{
      text-decoration: none;
@@ -44,8 +45,12 @@ p{
      z-index: -1;
      background:linear-gradient(to right, #eaf702ec 0, #bfcd3c 0%, #f8e90f 100%);
 }
-
 .navbar{
+     width: 100%;
+
+}
+
+/* .navbar{
      content:"";
      width:100%;
      position:absolute;
@@ -56,7 +61,7 @@ p{
      opacity: 0.3;
      z-index: -1;
      background:linear-gradient(to right, #1e5799 0, #3ccdbd 0%, #16c9f6 100%);
-}
+} */
 
 .navbar a{
      font-weight: bold;
