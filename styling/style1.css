@@ -109,7 +109,7 @@ p{
      margin-right: 30px; */
      border-radius: 30px;
      transition: 0.3s;
-
+     
 }
 
 .extra-div:hover{
@@ -330,6 +330,8 @@ p{
      padding: 10px;
      border-radius: 10px;
 }
+
+
 #myBtn:hover{
      background:#606060;
 } */
@@ -391,3 +393,4 @@ p{
 
 
 
+    
