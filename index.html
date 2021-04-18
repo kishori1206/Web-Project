@@ -15,16 +15,21 @@
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
         crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+
 
 
 </head>
 
 <body>
     <div class="header" id="topheader">
-        <nav class="navbar navbar-expand-md  navbar-light fixed-top " style="background-color: #e3f2fd;">
+        <nav class="navbar navbar-expand-md  navbar-light fixed-top " style="background-color: #a3d0f0;">
 
             <div class="container text-uppercase ps-2">
-                <a class="navbar-brand" href="#">WEB TECH</a>
+                <!-- <a class="navbar-brand" href="#">WEB TECH</a> -->
+                <div class="head">
+                    <span style="font-family:'Poppins', sans-serif;"><h1>WEB<span style="color: rgb(204, 153, 0);"> TECH </span></h1></span>
+                </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -247,22 +252,32 @@
 
         <div class="container project-item">
             <div>
-                <h1 class="count">1500</h1>
+                <!-- <h1 class="count">1500</h1>
+                <p>Students</p> -->
+                <h1> <div class="counter" data-target="2000"></div></h1>
                 <p>Students</p>
             </div>
             <div>
-                <h1 class="count">1500</h1>
+                <!-- <h1 class="count">1500</h1>
+                <p>Students</p> -->
+                <h1> <div class="counter" data-target="2000"></div></h1>
                 <p>Students</p>
             </div>
             <div>
-                <h1 class="count">1500</h1>
-                <p>Studnets</p>
-            </div>
-            <div>
-                <h1 class="count">155</h1>
+                <!-- <h1 class="count">1500</h1>
+                <p>Studnets</p> -->
+               <h1> <div class="counter" data-target="2000"></div></h1>
                 <p>Students</p>
             </div>
+            <div>
+                <!-- <h1 class="count">155</h1>
+                <p>Students</p> -->
+                <h1> <div class="counter" data-target="2000"></div></h1>
+                <p>Students</p>
+            </div>
+          
         </div>
+
     </section>
 
 
@@ -612,6 +627,31 @@
 
 
     <!-- 1: 6min -->
+
+    <script>
+        const count= document.querySelectorAll('.counter');
+        count.forEach((counter)=>{
+             counter.innerHTML=0;
+
+             const updateCounter=()=>{
+                  const targetCount = +counter.getAttribute('data-target');
+                  // console.log(targetCount);
+                  const startCount= Number(counter.innerHTML);
+
+                  const incr = targetCount/100;
+                  if(startCount < targetCount){
+                       counter.innerHTML = `${Math.round(startCount + incr)}`;
+                       setTimeout(updateCounter,50)
+                  }
+                  else{
+                       counter.innerHTMl=targetCount;
+                  }
+             }
+             updateCounter();
+
+
+        })
+   </script>
     <script>
         $('.count').counterUp({
             delay: 10,
