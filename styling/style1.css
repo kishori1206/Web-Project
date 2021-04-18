@@ -289,13 +289,13 @@ p{
      width:100%;
      height:auto;
      padding: 70px 0 20px 0;
-     background-color:rgba(255, 166, 0, 0.515);
+     background-color: #e3f2fd;
      position: relative;
      margin-top: 30px;
      display: block;
 }
 .footer-section p{
-     color:white;
+     color:lightslategray;
      text-align: justify;
 
 }
@@ -304,7 +304,16 @@ p{
      font-size: 20px;
      line-height: 1.6;
      font-weight: 400;
-     color:white;
+     color:grey;
+     text-transform: capitalize;
+     text-decoration: none;
+     text-align: center;
+}
+.footer-section li a:hover{
+     font-size: 20px;
+     line-height: 1.6;
+     font-weight: 400;
+     color:black;
      text-transform: capitalize;
      text-decoration: none;
      text-align: center;
@@ -312,7 +321,7 @@ p{
 
 .footer-section h3{
      text-transform: uppercase;
-     color: white;
+     color: black;
      margin-bottom: 25px;
      font-size: 1.2rem !important;
      font-weight: bold;
